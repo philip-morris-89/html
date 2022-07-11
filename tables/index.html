@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        table {
+            border-spacing: 0;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table th,
+        table td {
+            padding: 16px;
+            border: 1px solid black;
+        }
+        table caption {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Caption</caption>
+        <colgroup>
+            <col style="background-color: lime">
+            <col>
+            <col>
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Table head row 1 title A</th>
+                <th>Table head row 1 title B</th>
+                <th>Table head row 1 title C</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Table body row 1 title A</td>
+                <td>Table body row 1 title B</td>
+                <td>Table body row 1 title C</td>
+            </tr>
+            <tr>
+                <td>Table body row 2 title A</td>
+                <td>Table body row 2 title B</td>
+                <td>Table body row 2 title C</td>
+            </tr>
+            <tr>
+                <td>Table body row 3 title A</td>
+                <td>Table body row 3 title B</td>
+                <td>Table body row 3 title C</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Table footer row 1 title A</td>
+                <td>Table footer row 1 title B</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
