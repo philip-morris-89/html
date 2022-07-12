@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Articolo Blog</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Philip Morris's Blog</h1>
+  </header>
+  <main>
+    <section>
+      <article>
+        <header>
+          <h2>Nuova moto sul mercato!</h2>
+        </header>
+        <img
+          srcset="
+            images/harley-davidson-1024.jpg 1024w,
+            images/harley-davidson-720.jpg 720w,
+            images/harley-davidson-320.jpg 320w
+          "
+
+          sizes="
+            (max-width: 320px) 320px,
+            (max-width: 720px) 720px,
+            1024,
+          "
+
+          src="images/harley-davidson-1024.jpg" alt="Immagine di un Harley Davidson" />
+
+        <p>Glitter e Rock'n Roll fino alla morte con questa nuova uscita firmata Harley Davidson!</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <h3>Iscriviti al blog per news e aggiornamenti:</h3>
+    <form>
+      <label>Email</label>
+      <input type="email" placeholder="Inserisci qui la tua email" required />
+      <button type="submit">Iscriviti</button>
+    </form>
+  </footer>
+</body>
+</html>
