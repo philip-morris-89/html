@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio: Tabella</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        table {
+            border-spacing: 0;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        table th,
+        table td {
+            padding: 16px;
+            border: 1px solid black;
+        }
+        table caption {
+            padding: 16px;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Contabilità</caption>
+        <colgroup>
+            <col>
+            <col>
+            <col>
+            <col style="background-color: lime">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Mesi</th>
+                <th>Entrate</th>
+                <th>Uscite</th>
+                <th>Totale</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+              <td>Gennaio</td>
+              <td>$1000</td>
+              <td>$250</td>
+              <td>$750</td>
+            </tr>
+            <tr>
+              <td>Febbraio</td>
+              <td>$500</td>
+              <td>$250</td>
+              <td>$250</td>
+            </tr>
+            <tr>
+              <td>Marzo</td>
+              <td>$1500</td>
+              <td>$500</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>Aprile</td>
+              <td>$1500</td>
+              <td>$500</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>Maggio</td>
+              <td>$1500</td>
+              <td>$500</td>
+              <td>$1000</td>
+            </tr>
+            <tr>
+              <td>Giugno</td>
+              <td>$1000</td>
+              <td>$250</td>
+              <td>$750</td>
+            </tr>
+            <tr>
+              <td>Luglio</td>
+              <td>$500</td>
+              <td>$250</td>
+              <td>$250</td>
+            </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <th>Totale:</th>
+            <th>$7,500</th>
+            <th>$2,500</th>
+            <th>$5,000</th>
+          </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
