@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Attributes</title>
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Disabled Button</legend>
+      <button type="submit" disabled>Button</button>
+    </fieldset>
+
+    <fieldset>
+      <legend>Range Input</legend>
+      <div>
+        <label for="points">Points (Between 0-100):</label>
+        <input type="range" id="points" name="points" min="0" max="100" step="2">
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Checkbox</legend>
+      <div>
+        <label for="checkbox">
+          <input type="checkbox" id="checkbox" name="checkbox" checked>
+          Checkbox
+        </label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <legend>Date</legend>
+      <label for="date">Date of birth</label>
+      <input type="date" id="date" name="date" value="date" min="1922-01-01" max="2022-01-01">
+    </fieldset>
+
+  </form>
+</body>
+</html>
