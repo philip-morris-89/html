@@ -1,0 +1,141 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Forms Example</title>
+</head>
+<body>
+
+  <form action="http://localhost:3000/demo" method="GET">
+    <!-- Action indica qual’è l’indirizzo web a cui verranno spediti i nostri dati. -->
+    <!-- Method consente di definire qual’è il metodo http col quale i dati verranno inviati.
+         Ci sono due tipi di Method: post and GET.
+         Post: Invia tutti i dati dentro il body del documento chiamato con "action"
+         GET: Invia tutti i dati dentro la barra URL del server chiamato con "action"
+    -->
+    <fieldset>
+      <legend>Super Hero</legend>
+        <section>
+          <label for="hero">
+            <span>Nome: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="text" id="hero" name="hero" autofocus required >
+        </section>
+
+        <section>
+          <label for="power">
+            <span>Super power: </span>
+            <strong><abbr title="required">*</abbr></strong>
+            <input type="text" id="power" name="power" value="Light Speed Strength" required >
+          </label>
+        </section>
+
+        <section>
+          <label for="email">
+            <span>Email: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="email" id="email" name="email" required >
+        </section>
+
+        <section>
+          <label for="keyword">
+            <span>Secret word: </span>
+            <strong><abbr title="required">*</abbr></strong>
+          </label>
+          <input type="password" id="keyword" name="password" required >
+        </section>
+    </fieldset>
+
+    <fieldset>
+      <legend>Team</legend>
+      <ul>
+        <li>
+          <label for="team_1">
+            <input type="radio" id="team_1" name="team" value="JL">
+            Justice League
+          </label>
+        </li>
+        <li>
+          <label for="team_2">
+            <input type="radio" id="team_2" name="team" value="T">
+            Titans
+          </label>
+        </li>
+        <li>
+          <label for="team_3">
+            <input type="radio" id="team_3" name="team" value="SS">
+            Suicide Squad
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+
+    <fieldset>
+      <legend>Features</legend>
+      <section>
+        <label for="role">Ruolo: </label>
+        <select id="role" name="role">
+          <optgroup label="Good">
+            <option value="leader" selected>Leader</option>
+            <option value="captain">Captain</option>
+            <option value="assistant">Assistant</option>
+          </optgroup>
+          <optgroup label="Bad">
+            <option value="spy">Spy</option>
+            <option value="traitor">Traitor</option>
+            <option value="cheater">Cheater</option>
+          </optgroup>
+        </select>
+      </section>
+
+      <section>
+        <label for="partner">Partner:</label>
+        <input type="text" id="partner" name="partner" list="partners">
+        <datalist id="partners">
+          <option>Superman</option>
+          <option>Aquaman</option>
+          <option>Wonder Woman</option>
+          <option>Spiderman</option>
+          <option>Batman</option>
+          <option>Robin</option>
+        </datalist>
+      </section>
+
+      <section>
+        <label for="alive">
+          <input type="checkbox" id="alive" name="alive" value="alive" checked >
+          Survivor
+        </label>
+      </section>
+
+      <section>
+        <label for="uniform">
+          <span>Uniform</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="color" id="uniform" name="uniform" value="uniform" required>
+      </section>
+
+      <section>
+        <label for="date">
+          <span>Date of birth</span>
+          <strong><abbr title="required">*</abbr></strong>
+        </label>
+        <input type="date" id="date" name="date" value="date" min="1922-01-01" max="2022-01-01">
+      </section>
+
+      <section>
+        <label for="bio">Biography:</label>
+        <textarea cols="40" id="bio" name="bio">Lorem ipsum dolor sit amet</textarea>
+      </section>
+    </fieldset>
+
+    <section>
+      <button type="submit">Aggiungi eroe</button>
+    </section>
+  </form>
+</body>
+</html>
